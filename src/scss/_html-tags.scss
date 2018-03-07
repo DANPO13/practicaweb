@@ -1,0 +1,49 @@
+body {
+    background: $color-fondo;
+    font-family: $main-font-family;
+    font-size: $font-size-base;
+    color: $main-text-color;
+    padding-top: 60px;
+
+
+
+}
+
+form {
+    padding: 10px;
+}
+
+label, input, button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+label {
+    font-family: $title-font-family;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+input {
+    margin: 5px 0 5px 0;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid $form-input-border-color;
+    font-family: $title-font-family;
+    &:focus{
+        outline-color: $form-input-outline-color;
+    }
+}
+
+button {
+    @extend input;
+    background-color: $form-button-background-color;
+    color: $form-button-font-color;
+    font-weight: bold;
+    &:active {
+        background: lighten($form-button-background-color, 25%)
+    }
+   
+}

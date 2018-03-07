@@ -1,0 +1,35 @@
+.title-img {
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(img/frank.jpg);
+    height: 100vh;
+    
+
+   
+    transition: background-size 1.0s;
+
+    &:hover {
+        background-size: 115% 115%;
+    }
+
+    @include if-mobile-portrait {
+        height: 40vh;
+        }
+
+    @include if-mobile-landscape {
+            width: $tablet-landscape-width;
+            
+            
+            
+            }
+
+    @include if-tablet-portrait {
+                width: $tablet-portrait-width;
+                }
+
+    @include if-tablet-landscape {
+        width: $tablet-landscape-width + 1000px;
+                    }
+       
+}

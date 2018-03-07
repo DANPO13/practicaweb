@@ -1,0 +1,47 @@
+// Font families
+$main-font-family: 'Roboto', sans-serif;
+$title-font-family: 'Oswald', sans-serif;
+$body-font-family: $main-font-family;
+
+// Font sizes
+$font-size-base: 15px;
+$font-size-small: $font-size-base - 3px;
+$font-size-large: $font-size-base + 10px;
+$font-size-h1: $font-size-base + 20px;
+$font-size-h2: $font-size-base + 15px;
+$font-size-h3: $font-size-base + 13px;
+$font-size-h4: $font-size-base + 8px;
+$font-size-h5: $font-size-base + 5px;
+
+
+// Base colors
+$color-turquesa: #0E323C;
+$color-magenta: #8E2319;
+$color-oscuro: #0E0B0B;
+$color-azul: #2FB3B4;
+$color-rojo: #E73F2B;
+$color-amarillo:#FFD568;
+$color-fondo: transparentize($color-amarillo, 0.25);
+
+
+// Main components colors
+$main-text-color: $color-oscuro;
+$links-color: $color-turquesa;
+
+// Responsive
+// 667 iphone landscape. 768 ipad portrait
+$mobile-portrait-width: 375px;
+$mobile-landscape-width: 667px;
+$tablet-portrait-width: 768px;
+$tablet-landscape-width: 1024px;
+
+// Forms variables
+$form-input-border-color: $color-turquesa;
+$form-input-outline-color: $color-turquesa;
+$form-button-background-color: $color-turquesa;
+$form-button-font-color: $color-fondo;
+$form-error-background-color: $color-fondo;
+$form-error-font-color: $color-fondo;
+
+
+

@@ -1,0 +1,8 @@
+.contenedor {
+    width: 100%;
+
+    @include if-desktop {
+        margin: o auto;
+        width: 1024px;
+    }
+}

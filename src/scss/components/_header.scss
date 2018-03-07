@@ -1,0 +1,58 @@
+.web-header{
+    display: flex;
+    justify-content: flex-end;
+    padding: 4px 8px 4px 0;
+    align-items: center;
+    box-sizing: border-box;
+    background: fade-out($color-turquesa, 0.15) ;
+    padding: 15px;
+    color: $color-fondo;
+    text-align: left;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    transition: background 0.3s;
+    &:hover {
+        background: $color-turquesa;
+    }
+
+    
+    
+    .web-title {
+        
+        display: flex;
+        flex: 2;
+        font-size: $font-size-large;
+        font-weight: bold;
+        width: 35%;
+
+        @include if-mobile-portrait {
+            font-size: $font-size-base;
+            flex: 6;
+        }
+
+        @include if-mobile-landscape {
+                font-size: $font-size-h4;
+                flex: 10%;
+                margin-left: 30px;
+            
+                         
+                }
+        
+    
+
+    }
+
+    .form-search {
+        display: flex;
+        align-items: center;
+        .busquedas {
+            width: 150px;
+            margin-left: 15px;
+            margin-top: 10px;
+            padding: 5px;
+            background-color: $color-fondo;
+        }
+    }
+}

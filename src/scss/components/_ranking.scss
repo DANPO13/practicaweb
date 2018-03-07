@@ -1,0 +1,123 @@
+.bloque {
+    display: flex;
+    flex-direction: column;
+
+    .title-ranking {
+        display: flex;
+        background-color: $color-oscuro;
+        justify-content: center;
+        font-size: $font-size-h3;
+        color: $color-amarillo;
+        padding: 15px;
+    }
+
+    .ranking-container {
+        display: flex;
+        flex-direction: column;
+        order: 1;
+
+        @include if-tablet-landscape {
+            
+            flex-direction: row;
+            justify-content:space-between;
+
+                
+                }
+        
+      
+
+        .album-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            
+            height: 600px;
+
+            @include if-mobile-landscape {
+        
+                display:flex;
+                
+                flex-direction: row;
+                &.dos {flex-direction:row-reverse;}
+                &.cuatro {flex-direction:row-reverse;}
+                margin-left: 15px;
+                height:300px;
+                padding: 10px;
+            
+                
+                }
+
+            @include if-tablet-landscape {
+                display: inline-block;
+                flex-direction: column;
+                width: 500px;
+                height: 800px;
+                max-width:300px;
+
+                
+                
+               
+
+                    
+                    }
+
+            &.uno {
+                background-color: $color-magenta;
+                
+            }
+
+            &.dos {
+                background-color: $color-fondo;
+                
+            }
+
+            &.tres {
+                background-color: transparentize($color-azul, 0.25);
+            }
+
+            &.cuatro {
+                background-color: $color-rojo;
+            }
+
+            .img-ranking {
+                
+                height: 300px;
+                min-width: 300px;
+                max-width: 95%;
+                
+            }
+
+            .informacion {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .nombre {
+                    font-family: $title-font-family;
+                    font-size: $font-size-h1;
+                    padding-bottom: 5px;
+                }
+
+                .obra {
+                    font-size: $font-size-h5;
+                    padding: 10px;
+                    font-weight:bold;
+                }
+
+                .texto {
+                    font-family: $main-font-family;
+                    padding:10px;
+                    text-align: center;
+                }
+            }
+
+        }
+
+        
+
+    }
+
+}
+
+    

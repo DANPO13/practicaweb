@@ -1,0 +1,143 @@
+.list-comics {
+    margin-top: 10px;
+   
+
+
+    a {
+        text-decoration: none;
+       
+    }
+    
+    .status {
+        display:none;
+    }
+
+    &.vacio {
+        .status.vacio {
+            display: block;
+            
+        }
+    }
+
+    &.error {
+        .status.error {
+            display: block;
+            
+        }
+    }
+
+    &.carga {
+        .status.carga {
+            display: block;
+            
+        }
+    }
+
+    &.ideal {
+        .status.ideal {
+            display: block;
+        }
+    }
+
+    &.error, &.error, &.error{
+        font-size: $font-size-large;
+        text-align: center;
+    }
+
+    .comic {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        max-width: 90%;
+        margin-left: 20px;
+        margin-bottom: 5px;
+        margin-top: 7px;
+        color: $color-amarillo;
+        
+        
+        background: $color-magenta;
+        height: 600px;
+        max-width: 350px;
+        overflow: hidden;
+
+        
+         @include if-mobile-landscape {
+        
+        display: inline-block;
+        height: 400px;
+        width: 30%;
+        max-width: 180px;
+        justify-content: center;
+        flex-direction: row;
+        margin-left: 15px;
+        
+        }
+
+        @include if-tablet-portrait {
+        
+            height: 450px;
+            
+            }
+
+        @include if-tablet-landscape {
+        
+                height: 370px;
+                
+                }
+    
+        @include if-desktop{
+            width: 15%;
+            display: inline-block;
+            flex-direction: row;
+        }
+
+        .icon{
+            width: 100%;
+            
+        }
+
+        .top{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            margin-top: 10px;
+            
+            
+            
+        }
+
+        .artist{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2px;
+        }
+
+        .bkground {
+            background: $color-oscuro;
+            padding: 10px;
+        }
+
+        
+
+    
+
+      
+
+      
+    }
+   
+    .background-hover {
+        background: fade-out($color-oscuro, 0.15);
+        
+        transition: background 0.3s;
+        &:hover {
+            background: $color-oscuro;
+        }
+
+    }
+        
+    
+
+}
